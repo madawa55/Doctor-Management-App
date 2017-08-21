@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Adding Badge (Item Count)/Notification Count to Android Button-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/txtwecom"/>
+
+    <RelativeLayout
+        android:layout_marginTop="102dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/layout1"
+        android:layout_below="@+id/txtwecom"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:id="@+id/badge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/badge_layout3">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnmessageh"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/message"
+                    android:layout_marginStart="23dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout1"
+                android:background="@drawable/item_count"
+                android:text="21"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/badge_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btneventh"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/event"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout5"
+                android:background="@drawable/item_count"
+                android:text="16"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_alignEnd="@+id/layout4">
+        <RelativeLayout
+            android:id="@+id/badge3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/badge_layout4">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnhistoryh"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/history"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="21dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout3"
+                android:background="@drawable/item_count"
+                android:text="21"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/badge_layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnsheduleh"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/schedule"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout"
+                android:background="@drawable/item_count"
+                android:text="16"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="70dp"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:id="@+id/layout4"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/layout2"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:id="@+id/badge4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/badge_layout1">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout6"
+                android:background="@drawable/item_count"
+                android:text="21"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/badge_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btntodayh"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/today1"
+                    android:layout_marginStart="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/badge_notification_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout4"
+                android:background="@drawable/item_count"
+                android:text="16"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

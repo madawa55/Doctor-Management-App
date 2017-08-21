@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="app_name">Doc_app</string>
+    <string name="title_search">Marge</string>
+    <string name="title_activity_list__schedule1">List_Schedule1</string>
+
+</resources>
